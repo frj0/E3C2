@@ -1,0 +1,186 @@
+#contenedor {
+	width: auto;
+	height: auto;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#cabecera
+{
+	width: 100%;
+	height: 300px;
+	background: url(images/barra.jpg);
+  font-size: small;
+}
+
+#marca
+{
+
+
+}
+
+
+.contenido
+{
+	width: 95%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+
+
+
+p {
+  color: #ffffff;
+}
+  
+  
+
+
+@media all and (min-width:  600px) and (max-width: 1023px) {
+	#contenedor {
+		width: 580px;
+	}
+
+}
+@media all and (max-width: 599px) {
+	#contenedor {
+		width: 90%;
+		height: auto;
+	}
+	
+	#contenido {
+		height: auto;
+	}
+}
+
+
+
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 5px;
+}
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px;
+  }
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #b70202;
+}
+
+
+#hero a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #ffffff;
+  color: #a70000;
+}
+
+#hero .btn-get-started:hover {
+  background: #930000;
+  border: 2px solid #ffffff;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+
+--------------------------------------------------------------*/
+.about .content h3 {
+	font-weight: 600;
+	font-size: 26px;
+	color: #ffffff;
+  }
+  
+  .about .content  {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .about .content {
+	padding-bottom: 10px;
+  }
+  
+  .about .content  {
+	font-size: 20px;
+	padding-right: 4px;
+	color: #ffffff;
+  }
+  
+  .about .content {
+	background: #000000;
+	color: #ffffff;
+	border-radius: 50px;
+	padding: 8px 25px 9px 25px;
+	white-space: nowrap;
+	transition: 0.3s;
+	font-size: 14px;
+	display: inline-block;
+  }
+  
+  .about .content .learn-more-btn:hover {
+	background: #000000;
+	color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+	.about .content .learn-more-btn {
+	  margin: 0 48px 0 0;
+	  padding: 6px 18px;
+	}
+  }
+  
+  /*--------------------------------------------------------------
+  
