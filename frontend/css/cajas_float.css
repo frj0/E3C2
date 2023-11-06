@@ -4,26 +4,17 @@
 	background-color: black;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 
-#cabecera
-{
+#cabecera {
 	width: 100%;
 	height: 300px;
 	background: url(images/barra.jpg);
   font-size: small;
 }
 
-#marca
-{
 
-
-}
-
-
-.contenido
-{
+.contenido {
 	width: 95%;
 	height: auto;
 	margin-left: auto;
@@ -59,7 +50,9 @@ p {
   background-color: #000000;
   color: #ffffff;
   line-height: 0.1;
-  padding: 2px;
+  padding-top: 30px;
+  padding-bottom: 1px;
+
 }
 
 .pagination 
@@ -143,9 +136,6 @@ p {
   }
 }
 
-/*--------------------------------------------------------------
-
---------------------------------------------------------------*/
 .about .content h3 {
 	font-weight: 600;
 	font-size: 26px;
@@ -192,10 +182,7 @@ p {
   
   footer {
   text-align: right;
-  background-color: rgb(0, 0, 0)81, 122);
+  background-color: rgb(0, 0, 0);
   font-size: 1px;
-  line-height: 0.1;
-  padding: 2px;
-
 }
 
