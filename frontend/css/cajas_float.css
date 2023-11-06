@@ -31,8 +31,6 @@
 	background-color: black;
 }
 
-
-
 p {
   color: #ffffff;
 }
@@ -57,7 +55,17 @@ p {
 	}
 }
 
+.column {
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 0.1;
+  padding: 2px;
+}
 
+.pagination 
+{
+  background-color: #000000;
+}
 
 --------------------------------------------------------------*/
 #hero {
@@ -92,7 +100,7 @@ p {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #b70202;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -105,7 +113,7 @@ p {
   border-radius: 50px;
   transition: 0.5s;
   border: 2px solid #ffffff;
-  color: #a70000;
+  color:  rgb(255, 255, 255);
 }
 
 #hero .btn-get-started:hover {
@@ -182,5 +190,12 @@ p {
 	}
   }
   
-  /*--------------------------------------------------------------
-  
+  footer {
+  text-align: right;
+  background-color: rgb(0, 0, 0)81, 122);
+  font-size: 1px;
+  line-height: 0.1;
+  padding: 2px;
+
+}
+

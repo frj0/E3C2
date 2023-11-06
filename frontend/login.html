@@ -17,9 +17,7 @@
 	<script type="text/javascript" src="vendors/js/bootstrap.min.js"></script>
 
 	<div id="contenedor">
-	<header id= "cabecera">
-		
-	</header>
+	<header id= "cabecera">	</header>
 	<!-- Fin del Header -->
 
   <!-- ======= Hero ======= -->
@@ -31,6 +29,7 @@
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			  <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				  Productos
@@ -42,6 +41,7 @@
 				  <li><a class="dropdown-item" href="products.html">Electrohogar</a></li>
 				</ul>
 			  </li>
+			  </ul>
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				  <li class="nav-item">
@@ -51,6 +51,7 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				  <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Contacto
@@ -60,7 +61,7 @@
 					  <li><a class="dropdown-item" href="contact.html">Escríbanos</a></li>
 					  </ul>
 				  </li>
-
+				  </ul>
 				<form class="d-flex" role="search">
 				  <input class="form-control me-2" type="search" placeholder="Escribí aca lo que buscás" aria-label="Search">
 				  <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -70,13 +71,13 @@
 		  </nav>
     </div>
   </section><!-- Fin Hero -->
-
-<body>
+  
+  <main id="main">
 	<section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="card shadow-lg">
+					<div class="card text-white bg-dark shadow-lg">
 						<div class="card-body p-5">
 							<h1 class="fs-4 card-title fw-bold mb-4">Ingresar</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
@@ -106,7 +107,7 @@
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
 										<label for="remember" class="form-check-label">Recordar mis datos</label>
 									</div>
-									<button type="submit" class="btn btn-secondary ms-auto">
+									<button type="submit" class="btn btn-outline-info ms-auto">
 										Ingresar
 									</button>
 								</div>
@@ -114,7 +115,7 @@
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								¿No tenes una cuenta? <a href="registro.html" class="text-dark">Creá una</a>
+								¿No tenes una cuenta? <a href="registro.html" class="btn btn-outline-info ms-auto">Creá una</a>
 							</div>
 						</div>
 					</div>
@@ -124,6 +125,19 @@
 			</div>
 		</div>
 	</section>
+	<footer class="main-footer">
+		<div class="column column--33">
+			<p class="column__txt">Av Siempre Viva- Córdoba capital, Argentina</p>
+			<p class="column__txt"> <a href="https://wa.me/+549123456789">		  whatsapp</a>
+			</p>
+			<p class="column__txt">consultas@TechGadgetLandia.com</p>
+			<p>Copyright TechGadgetLandia-Todos los derechos reservados-2023®</p>
+			
+		</div>
+	</footer>
+
+  </main>
+	</div>
 </body>
-<html>
+</html>
 
