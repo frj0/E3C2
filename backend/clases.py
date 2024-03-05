@@ -1,17 +1,23 @@
 class Usuario:
-    def __init__(self, nombre_usuario, correo_electronico, contrasena):
+    def __init__(self, nombre_usuario, correo_electronico, contrasena, domicilio, apellido, nombre):
         self.nombre_usuario = nombre_usuario
+        self.nombre = nombre
+        self.apellido = apellido
         self.correo_electronico = correo_electronico
         self.contrasena = contrasena
+        self.domicilio = domicilio
 
 class Producto:
-    def __init__(self, nombre, descripcion, precio, stock):
-        self.nombre = nombre
+    def __init__(self, nombre_producto, descripcion, precio, stock, marca, categoria):
+        self.nombre_producto = nombre_producto
         self.descripcion = descripcion
         self.precio = precio
         self.stock = stock
+        self.marca = marca
+        self.categoria = categoria
 
-class CarritoDeCompras:
+
+class Carrito:
     def __init__(self):
         self.productos = []
 
@@ -21,30 +27,12 @@ class CarritoDeCompras:
     def eliminar_producto(self, producto):
         self.productos.remove(producto)
 
-    def calcular_total(self):
-        total = 0
+    def calcular_monto(self):
+        monto = 0
         for producto in self.productos:
-            total += producto.precio
-        return total
+            monto += producto.precio
+        return monto
 
 class Categoria:
-    def __init__(self, nombre):
-        self.nombre = nombre
-
-class Venta:
-    def __init__(self, fecha, usuario, productos):
-        self.fecha = fecha
-        self.usuario = usuario
-        self.productos = productos
-
-class Comentario:
-    def __init__(self, contenido, usuario, fecha):
-        self.contenido = contenido
-        self.usuario = usuario
-        self.fecha = fecha
-
-
-class Proveedor:
-    def __init__(self, nombre_empresa, detalles_contacto):
-        self.nombre_empresa = nombre_empresa
-        self.detalles_contacto = detalles_contacto
+    def __init__(self, categoria):
+        self.categoria = categoria
