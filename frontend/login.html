@@ -15,6 +15,7 @@
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="vendors/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 
 	<div id="contenedor">
 	<header id= "cabecera">	</header>
@@ -72,59 +73,38 @@
     </div>
   </section><!-- Fin Hero -->
   
-  <main id="main">
-	<section class="h-100">
-		<div class="container h-100">
-			<div class="row justify-content-sm-center h-100">
-				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="card text-white bg-dark shadow-lg">
-						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Ingresar</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
-								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">Dirección e-mail</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-									<div class="invalid-feedback">
-										El e-mail es inválido
-									</div>
-								</div>
-
-								<div class="mb-3">
-									<div class="mb-2 w-100">
-										<label class="text-muted" for="password">Contraseña</label>
-										<a href="#" class="float-end">
-											¿Olvidó su contraseña?
-										</a>
-									</div>
-									<input id="password" type="password" class="form-control" name="password" required>
-								    <div class="invalid-feedback">
-								    	Se requiere contraseña
-							    	</div>
-								</div>
-
-								<div class="d-flex align-items-center">
-									<div class="form-check">
-										<input type="checkbox" name="remember" id="remember" class="form-check-input">
-										<label for="remember" class="form-check-label">Recordar mis datos</label>
-									</div>
-									<button type="submit" class="btn btn-outline-info ms-auto">
-										Ingresar
-									</button>
-								</div>
-							</form>
+  <div class="container register">  
+	<form class="row justify-content-sm-center" action="">
+		<div class="card text-black shadow-lg col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+			<div class="card-body p-5"> <!-- acomodar los textos arriba -->
+			<h1 class="fs-4 card-title fw-bold mb-4">Ingreso</h1>
+			<div class="col-12">
+				<label for="contrasena" class="form-label">Contraseña</label>
+				<input type="password" maxlength="8" class="form-control" id="contrasena" value="" required>
+			  </div>
+					  <div class="col-12">
+						<label for="usuario" class="form-label">Usuario</label>
+						<div class="input-group">
+						  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+						  <input type="text" class="form-control" id="usuario" aria-describedby="inputGroupPrepend2" required>
 						</div>
-						<div class="card-footer py-3 border-0">
-							<div class="text-center">
-								¿No tenes una cuenta? <a href="registro.html" class="btn btn-outline-info ms-auto">Creá una</a>
-							</div>
-						</div>
-					</div>
-					<div class="text-center mt-5 text-muted">
-					</div>
+					  </div>
+					  
+			
+				<button class="btn btn-outline-info ms-auto" type="submit" onclick="loguear()">
+				  Ingresar
+				</button>
+
+			  </form>
+
+			  <div class="card-footer py-3 border-0">
+				<div class="text-center">
+					¿No tenes una cuenta? <a href="registro.html" class="btn btn-outline-info ms-auto">Creá una</a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+		
 	<footer class="main-footer">
 		<div class="column column--33">
 			<p class="column__txt">Av Siempre Viva- Córdoba capital, Argentina</p>
