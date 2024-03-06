@@ -14,5 +14,3 @@ else
     alert ("Datos incorrectos")
 }
 }
-
-return false
