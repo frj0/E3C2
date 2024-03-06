@@ -1,4 +1,4 @@
-function loguear ()
+function loguear()
 {
 
     let user=document.getElementById("usuario").value;
