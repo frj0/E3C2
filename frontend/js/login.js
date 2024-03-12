@@ -1,3 +1,5 @@
+alert('Sus credenciales son usuario: Usuario1; contraseña: password')
+
 function loguear()
 {
 
