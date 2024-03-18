@@ -5,7 +5,7 @@ function loguear() {
     let pass = document.getElementById("contrasena").value;
     
     if (user == "Usuario1" && pass == "password") {
-        window.location.replace("../index.html");
+        window.location.replace("../frontend/index.html");
     } else {
         alert("Datos incorrectos");
     }
