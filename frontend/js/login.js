@@ -7,7 +7,7 @@ function loguear()
     let pass=document.getElementById("contrasena").value;
 if(user=="Usuario1" && pass=="password")
 {
-    window.location="index.html";
+    window.location.href="index.html";
 
 }
 
